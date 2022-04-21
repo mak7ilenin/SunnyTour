@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #FCEEE4;
 }
@@ -133,7 +137,7 @@ h1 {
     justify-content: center;
 }
 
-.discount-heading {
+.stock-heading {
     width: 100%;
 }
 
@@ -334,3 +338,128 @@ h3 {
 
 
 /* TEAM PAGE*/
+
+.team-page {
+    margin: 70px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.team-heading-content {
+    width: 100%;
+}
+
+.team-heading {
+    padding-top: 10px;
+    width: 541px;
+    height: 106px;
+    flex-wrap: wrap;
+}
+
+.person-content {
+    width: 594px;
+    margin: 45px 75px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 307px;
+    background: #FFD9BD;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+}
+
+.person-img-content {
+    width: 25%;
+    margin-left: 10px;
+    margin-top: 50px;
+}
+
+.person-img {
+    width: 175px;
+    height: 200px;
+    border-radius: 114px;
+}
+
+.person-info h3 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 31px;
+    text-align: center;
+    width: 100%;
+}
+
+.person-info {
+    width: 55%;
+    list-style: none;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.person-info h4, h5 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+}
+
+.person-info h4 {
+    font-weight: bold;
+}
+
+
+
+/* CONTACTS PAGE */
+
+
+.contacts-page {
+    margin: 100px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contacts-heading-content {
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.contacts-heading {
+    padding-top: 10px;
+    width: 541px;
+    height: 106px;
+}
+
+.map-img-content {
+    width: 45%;
+    
+}
+
+.contacts-info {
+    width: 50%;
+    list-style: none;
+}
+
+.contacts-info li {
+    padding: 1px 0;
+    margin: 0 auto;
+}
+
+.contacts-info h3 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 42px;
+    text-align: center;
+    line-height: 1px;
+}
+
+.contacts-info h4 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 37px;
+    text-align: center;
+    line-height: 1px;
+}

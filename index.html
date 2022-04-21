@@ -33,10 +33,10 @@
             <img class="img-logo" src="Images/LOGO.png" alt="Logo">
             <nav>
                 <ul>
-                    <li><a style="color: black;" href="">Акции</a></li>
-                    <li><a style="color: black;" href="">Отзывы</a></li>
-                    <li><a style="color: black;" href="">Команда</a></li>
-                    <li><a style="color: black;" href="">Контакты</a></li>
+                    <li><a style="color: black;" href="#stock">Акции</a></li>
+                    <li><a style="color: black;" href="#review">Отзывы</a></li>
+                    <li><a style="color: black;" href="#team">Команда</a></li>
+                    <li><a style="color: black;" href="#contacts">Контакты</a></li>
                     <li><a style="color: black;" href="">Партнеры</a></li>
                 </ul>
             </nav>
@@ -60,8 +60,8 @@
             </section>
             
             <section class="stock-page">
-                <div class="discount-heading">
-                    <h2>Акции</h2>
+                <div class="stock-heading">
+                    <h2 id="stock">Акции</h2>
                 </div>
                 <div class="stock-column">
                     <h3>Пакет “Семейный” <br> 
@@ -119,7 +119,7 @@
             </section>
 
             <section class="review-page">
-                <h2 class="review-heading">Популярные отзывы</h2>
+                <h2 id="review" class="review-heading">Популярные отзывы</h2>
                 <div class="review-content">
                     <div class="particular-review">
                         <h3 class="user-name">Александр Дружев (34 года)</h3>
@@ -178,15 +178,77 @@
             </section>
 
             <section class="team-page">
-                <h2 class="team-heading">Команда</h2>
+                <div id="team" class="team-heading-content">
+                    <h2 class="team-heading">Команда</h2>
+                </div>
                 <div class="person-content">
-                    <h3>Maksim Dzjubenko</h3>
-                    <ul>
-                        <li><h4>Директор кампании</h4></li>
-                        <li><p class="phone">+372 5857 4210</p></li>
-                        <li><p class="e-mail">Maksim.Dzjubenko@JaEgovse.ee</p></li>
-                    </ul>
+                    <div class="person-img-content">
+                        <img class="person-img" src="Images/Maksim.png" alt="Maksim">
                     </div>
+                    <ul class="person-info">
+                        <li><h3>Maksim Dzjubenko</h3></li>
+                        <li><h4>Директор кампании</h4></li>
+                        <li><h5 class="phone">+372 5857 4210</h5></li>
+                        <li><h5 class="e-mail">Maksim.Dzjubenko@JaEgovse.ee</h5></li>
+                    </ul>
+                </div>
+                <div class="person-content">
+                    <div class="person-img-content">
+                        <img class="person-img" src="Images/Divissenko.jpg" alt="Divissenko">
+                    </div>
+                    <ul class="person-info">
+                        <li><h3>Daniil Divissenko</h3></li>
+                        <li><h4>Главный туроператор</h4></li>
+                        <li><h5 class="phone">+372 5764 8257</h5></li>
+                        <li><h5 class="e-mail">Daniil.Divissenko@JaEgovse.ee</h5></li>
+                    </ul>
+                </div>
+                <div class="person-content">
+                    <div class="person-img-content">
+                        <img class="person-img" src="Images/Sergei.png" alt="Sergei">
+                    </div>
+                    <ul class="person-info">
+                        <li><h3>Sergei Dzjubenko</h3></li>
+                        <li><h4>Менеджер по работе с клиентами</h4></li>
+                        <li><h5 class="phone">+372 5964 8175</h5></li>
+                        <li><h5 class="e-mail">Sergei.Dzjubenko@JaEgovse.ee</h5></li>
+                    </ul>
+                </div>
+                <div class="person-content">
+                    <div class="person-img-content">
+                        <img class="person-img" src="Images/Timofey.png" alt="Timothy">
+                    </div>
+                    <ul class="person-info">
+                        <li><h3>Timofei Shinshakov</h3></li>
+                        <li><h4>Менеджер по маркетингу</h4></li>
+                        <li><h5 class="phone">+372 5875 4213</h5></li>
+                        <li><h5 class="e-mail">Timofei.Shinshakov@JaEgovse.ee</h5></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="contacts-page">
+                <div class="contacts-heading-content">
+                    <h2 id="contacts" class="contacts-heading">Контакты</h2>
+                </div>
+                <div class="map-img-content">
+                    <img class="map-img" src="Images/map.png" alt="map">
+                </div>
+                <ul class="contacts-info">
+                    <li>
+                        <h3>Тел. номер:</h3>
+                        <h4>+372 5956 3124</h4>
+                    </li>
+                    <li>
+                        <h3>E-Mail:</h3>
+                        <h4>SunnyTour@JaEgovse.ee</h4>
+                    </li>
+                    <li>
+                        <h3>Sunny tour OÜ</h3>
+                        <h4>Kasteheina 5-14</h4>
+                        <h4>31024 Kohtla-Järve</h4>
+                    </li>
+                </ul>
             </section>
         </main>
         
