@@ -7,9 +7,9 @@ body {
 }
 
 .wrapper {
+    width: 80%;
     background-color: rgb(255, 255, 255);
     margin: 0 auto;
-    width: 80%;
     background-color: #FCEEE4;
     transition: ease all .5s;
 }
@@ -31,12 +31,12 @@ header {
 nav {
     width: 85%;
     display: flex;
-    margin: 0 auto;
 }
 
 nav ul {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -51,11 +51,8 @@ nav ul li {
     font-style: normal;
     font-weight: 400;
     font-size: 30px;
-    line-height: 34px;
-    align-items: center;
     text-align: center;
     transition: ease all .5s;
-    padding: 3px 0;
 }
 
 nav ul li a {
@@ -67,39 +64,46 @@ nav ul li a {
     align-items: center;
 }
 
+img {
+    transition: ease all .5s;
+}
+
 /* ГЛАВНАЯ СТРАНИЦА */
 
 .main-page {
     margin: 150px auto;
     margin-left: 20px;
     display: flex;
+    flex-direction: row-reverse
 }
 
 h1 {
-    width: 836px;
+    white-space: nowrap;
     font-family: 'Inter';
     font-weight: 600;
     font-size: 70px;
-    text-align: left;
 }
 
 .main-page-img {
     border-radius: 167px;
-    width: 689px;
-    height: 485px;
+    width: 629px;
+    height: 455px;
 }
 
 .main-content {
-    width: 600px;
-    text-align: center;
+    width: 100%;
+    flex-wrap: wrap;
 }
 
 .main-content p{
+    width: 100%;
     font-family: 'Inter';
     font-weight: 600;
     font-size: 26px;
     line-height: 31px;
     text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .main-button{
@@ -123,7 +127,11 @@ h1 {
 }
 
 .main-img {
-    margin-left: 150px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    overflow: hidden;
+    width: 100%;
 }
 
 
@@ -517,4 +525,56 @@ h3 {
     width: 50%;
     display: flex;
     justify-content: flex-end;
+}
+
+
+
+
+/* phone version 
+    maximum width - 671px
+*/
+
+@media (max-width: 691px) {
+    .wrapper {
+        width: 100%;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    nav ul {
+        width: 100%;
+    }
+
+    nav ul li {
+        width: 50px;
+        height: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav ul li a {
+        font-size: 10px;
+    }
+
+    .main-page {
+        display: block;
+    }
+
+    .main-img {
+        justify-content:center;
+    }
+
+    .main-page-img {
+        width: 374px;
+        height: 239px;
+    }
+
+    h1 {
+        font-size: 42px;
+        margin-left: 0;
+        text-align: center;
+    }
 }

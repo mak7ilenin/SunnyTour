@@ -2,6 +2,12 @@ body {
     background-color: #FCEEE4;
 }
 
+.wrapper {
+    width: 70%;
+    margin: 0 auto;
+    transition: ease all .5s;
+}
+
 header {
     margin: 0 auto;
     width: 479.15px;
@@ -17,12 +23,7 @@ h2 {
     font-weight: 400;
     font-size: 67px;
     text-align: center;
-
-}
-
-.wrapper {
-    width: 70%;
-    margin: 0 auto;
+    
 }
 
 .registration-content {
@@ -86,11 +87,17 @@ select {
     width: 100%;
     margin-left: 20px;
     margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
 }
 
-.submit-button {
-    width: 50%;
+.action-button {
+    width: 48%;
     height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
 
     background: #FFCB7C;
     border: 1px solid #000000;
@@ -101,32 +108,51 @@ select {
     font-style: normal;
     font-weight: 400;
     font-size: 25px;
-    text-align: center;
+}
+
+.action-button a {
+    text-decoration: none;
+    color: black;
 }
 
 
 
-/* phone version */
+/* phone version 
+    maximum width - 671px
+    minimum width - 390px
+*/
 
-@media (max-width: 671px) {
+@media (max-width: 671px) and (min-width: 390px) {
     .wrapper {
         width: 95%;
     }
 
     header {
         width: 90%;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    h2 {
+        font-size: 40px;
     }
 
     .registration-content {
         width: 90%;
-        height: 779px;
+        height: 579px;
     }
 
     label {
-        font-size: 22px;
+        font-size: 20px;
     }
 
-    .submit-button {
-        font-size: 18px;
+    .action-button {
+        height: 35px;
+        font-size: 16px;
+    }
+
+    input {
+        height: 30px;
     }
 }
