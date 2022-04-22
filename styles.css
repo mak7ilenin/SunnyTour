@@ -463,3 +463,58 @@ h3 {
     text-align: center;
     line-height: 1px;
 }
+
+.partners-page {
+    margin: 170px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.partners-heading-content {
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.partners-heading {
+    width: 541px;
+    height: 106px;
+}
+
+.top-row {
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+}
+
+.first-in-first-row {
+    width: 50%;
+}
+
+.second-in-first-row {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.mid-row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.bottom-row {
+    width: 100%;
+    display: flex;
+}
+
+.first-in-third-row {
+    width: 50%;
+}
+
+.second-in-third-row {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
