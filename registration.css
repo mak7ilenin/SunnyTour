@@ -1,0 +1,132 @@
+body {
+    background-color: #FCEEE4;
+}
+
+header {
+    margin: 0 auto;
+    width: 479.15px;
+    height: 82px;
+    background: #FFD4B6;
+    border-radius: 50px;
+    margin-bottom: 50px;
+}
+
+h2 {
+    font-family: 'Gafata', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 67px;
+    text-align: center;
+
+}
+
+.wrapper {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.registration-content {
+    width: 70%;
+    height: 679px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    
+    background: #FFD9BD;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 50px;
+}
+
+label {
+    margin-left: 30px;
+    margin-top: 22px;
+    font-family: 'Dosis', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    text-align: left;
+    margin-right: 15px;
+    white-space: nowrap
+}
+
+.additional-container {
+    width: 100%;
+    margin-right: 20px;
+    flex-wrap: nowrap;
+    display: flex;
+    justify-content: flex-start;
+}
+
+input {
+    width: 100%;
+    height: 43px;
+    margin-top: 20px;
+}
+
+#e-mail {
+    font-weight: 900;
+}
+
+input[type="text"]
+{
+    font-size:24px;
+}
+
+select {
+    width: 35%;
+    height: 43px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.submit {
+    width: 100%;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+
+.submit-button {
+    width: 50%;
+    height: 58px;
+
+    background: #FFCB7C;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 153px;
+
+    font-family: 'Alice';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    text-align: center;
+}
+
+
+
+/* phone version */
+
+@media (max-width: 671px) {
+    .wrapper {
+        width: 95%;
+    }
+
+    header {
+        width: 90%;
+    }
+
+    .registration-content {
+        width: 90%;
+        height: 779px;
+    }
+
+    label {
+        font-size: 22px;
+    }
+
+    .submit-button {
+        font-size: 18px;
+    }
+}
