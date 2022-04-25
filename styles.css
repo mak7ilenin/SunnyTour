@@ -34,6 +34,8 @@ nav {
 }
 
 nav ul {
+    margin: 0;
+    padding: 0;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -60,6 +62,8 @@ nav ul li a {
 }
 
 .profile-img {
+    margin-right: 20px;
+    margin-left: 40px;
     display: flex;
     align-items: center;
 }
@@ -154,15 +158,15 @@ h2 {
     height: 100px;
     background: #FFD4B6;
     border-radius: 50px;
-    margin: 25px auto;
+    margin: 10px auto;
     display: flex;
     justify-content: center;
+    align-items: center;
 
     font-family: 'Gafata', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 62px;
-    line-height: 92px;
 }
 
 .stock-column {
@@ -206,7 +210,7 @@ h3 {
 
 .no-discount {
     text-decoration: line-through;
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 46px;
@@ -214,7 +218,7 @@ h3 {
 }
 
 .discount {
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 50px;
@@ -269,8 +273,8 @@ h3 {
 }
 
 .review-content {
-    width: 1399px;
-    height: 649px;
+    width: 95%;
+    height: auto;
     background: #FFD9BD;
     border: 1px solid #FFDBC1;
     box-sizing: border-box;
@@ -280,7 +284,7 @@ h3 {
 
 .particular-review {
     width: 100%;
-    height: 180px;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 0px;
@@ -301,8 +305,8 @@ h3 {
 }
 
 .star-container {
-    width: 298px;
-    height: 56px;
+    width: 30%;
+    height: 69px;
     margin-top: 40px;
     margin-left: 20px;
     background-color: #FF9D0A;
@@ -317,8 +321,7 @@ h3 {
 }
 
 .star {
-    width: 54px;
-    height: 56px;
+    width: 19%;
 }
 
 .all-review-button {
@@ -367,10 +370,10 @@ h3 {
 
 .person-content {
     width: 594px;
+    height: auto;
     margin: 45px 75px;
     display: flex;
     flex-wrap: wrap;
-    height: 307px;
     background: #FFD9BD;
     border: 1px solid #000000;
     box-sizing: border-box;
@@ -402,6 +405,7 @@ h3 {
     list-style: none;
     text-align: center;
     flex-wrap: wrap;
+    padding: 0;
 }
 
 .person-info h4, h5 {
@@ -447,6 +451,7 @@ h3 {
 .contacts-info {
     width: 50%;
     list-style: none;
+    padding: 0;
 }
 
 .contacts-info li {
@@ -534,10 +539,12 @@ h3 {
     maximum width - 671px
 */
 
-@media (max-width: 691px) {
+@media (max-width: 671px) and (min-width: 431px) {
     .wrapper {
         width: 100%;
     }
+
+    /* НАВИГАЦИЯ */
 
     nav {
         width: 100%;
@@ -548,7 +555,7 @@ h3 {
     }
 
     nav ul li {
-        width: 50px;
+        width: 75px;
         height: 25px;
         display: flex;
         justify-content: center;
@@ -556,15 +563,22 @@ h3 {
     }
 
     nav ul li a {
-        font-size: 10px;
+        font-size: 15px;
     }
+
+    /* ГЛАВНАЯ СТРАНИЦА */
 
     .main-page {
         display: block;
+        margin-left: 0;
+        margin-top: 40px;
+        margin-bottom: 215px;
     }
 
     .main-img {
         justify-content:center;
+        margin: 0;
+        padding: 0;
     }
 
     .main-page-img {
@@ -573,8 +587,224 @@ h3 {
     }
 
     h1 {
-        font-size: 42px;
+        font-size: 38px;
         margin-left: 0;
         text-align: center;
+    }
+
+    .main-content p {
+        font-size: 18px;
+    }
+
+    .img-logo {
+        margin-top: 15px;
+        width: 150px;
+        height: 120px;
+    }
+
+    .profile-icon {
+        width: 70px;
+    }
+
+    .profile-img {
+        margin: 15px;
+        padding: 0;
+    }
+
+    .main-button {
+        height: 80px
+    }
+
+    /* АКЦИИ */
+
+    .stock-column {
+        width: 100%;
+        margin: 20px;
+        padding: 15px;
+    }
+
+    .stock-column h3 {
+        font-size: 30px;
+    }
+
+    .stock-column ul {
+        height: 360px;
+        margin-top: 7%;
+    }
+
+    .stock-column ul li {
+        font-size: 20px;
+    }
+
+    .book-button {
+        width: 80%;
+    }
+
+    /* ОТЗЫВЫ */
+
+    .review-heading {
+        font-size: 40px;
+    }
+
+    .review-content {
+        padding: 20px 8px;
+    }
+
+    .particular-review {
+        padding: 20px 15px;
+    }
+
+    .inner-review {
+        flex-wrap: wrap;
+    }
+
+    .inner-review p {
+        width: 95%;
+    }
+
+    .star-container {
+        width: 241px;
+        height: 46px;
+        margin: 0;
+    }
+
+    .star {
+        width: 44.5px;
+        height: 47px;
+    }
+
+
+    /* КОМАНДА */
+
+    .team-heading-content h2 {
+        width: 80%;
+        height: 80px;
+        font-size: 50px;
+        padding: 0;
+    }
+
+    .person-content {
+        width: 100%;
+        margin: 20px 10px;
+    }
+
+    .person-img-content {
+        width: 35%;
+        margin: 0;
+        margin-left: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .person-img {
+        width: 135px;
+        height: 160px;
+    }
+
+    .person-info h3 {
+        font-size: 24px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        white-space: nowrap
+    }
+
+    .person-info h4 {
+        font-size: 16px
+    }
+
+    .person-info h5 {
+        font-size: 14px;
+    }
+
+
+    /* КОНТАКТЫ */
+
+    .contacts-heading-content {
+        margin-bottom: 50px;
+    }
+    
+    .contacts-heading {
+        width: 80%;
+        height: 80px;
+        font-size: 50px;
+        padding: 0;
+    }
+
+    .map-img-content {
+        width: 70%;
+        margin-top: 0
+    }
+    
+    .map-img {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .contacts-info {
+        width: 100%;
+    }
+
+    .contacts-info h3 {
+        width: 100%;
+        font-size: 30px
+    }
+    
+    .contacts-info h4 {
+        width: 100%;
+        font-size: 25px;
+    }
+
+
+    /* ПАРТНЕРЫ */
+
+    .partners-heading-content {
+        margin-bottom: 45px
+    }
+
+    .partners-heading {
+        width: 100%;
+        height: 80px;
+        font-size: 50px;
+        padding: 0;
+    }
+
+    .partners-page img {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .top-row {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .first-in-first-row {
+        width: 70%;
+        justify-content: center;
+    }
+    
+    .second-in-first-row {
+        width: 70%;
+        justify-content: center;
+    }
+
+    .mid-row {
+        width: 70%;
+    }
+    
+    .bottom-row {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .first-in-third-row {
+        width: 70%;
+        justify-content: center;
+    }
+    
+    .second-in-third-row {
+        width: 70%;
+        justify-content: center;
     }
 }
