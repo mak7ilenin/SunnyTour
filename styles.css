@@ -43,7 +43,7 @@ nav ul {
 }
 
 nav ul li {
-    width: 185.69px;
+    width: 186px;
     background: #FFCB7C;
     border-radius: 77px;
     margin: 0 auto;
@@ -82,10 +82,12 @@ img {
 }
 
 h1 {
-    white-space: nowrap;
+    width: 100%;
+    /* white-space: nowrap; */
     font-family: 'Inter';
     font-weight: 600;
     font-size: 70px;
+    text-align: center;
 }
 
 .main-page-img {
@@ -104,7 +106,6 @@ h1 {
     font-family: 'Inter';
     font-weight: 600;
     font-size: 26px;
-    line-height: 31px;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -143,6 +144,7 @@ h1 {
 
 
 .stock-page {
+    width: 100%;
     margin: 150px auto;
     display: flex;
     flex-wrap: wrap;
@@ -170,8 +172,8 @@ h2 {
 }
 
 .stock-column {
-    width: 402px;
-    margin: 0px 30px;
+    width: 405px;
+    margin: 25px 2%;
     background: #FFD9BD;
     border: 1px solid #000000;
     box-sizing: border-box;
@@ -191,6 +193,7 @@ h3 {
 .stock-column ul {
     width: 80%;
     margin: 0 auto;
+    padding-bottom: 5%;
     flex: 1 1 auto;
     height: 345px;
 }
@@ -200,7 +203,6 @@ h3 {
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
-    line-height: 29px;
     padding-bottom: 25px;
 }
 
@@ -228,13 +230,12 @@ h3 {
 }
 
 .book-button {
-    width: 306px;
+    width: 75%;
     height: 58px;
     background: #FFCB7C;
     border: 1px solid #000000;
     box-sizing: border-box;
     border-radius: 153px;
-    margin: 0 auto;
     margin: 25px auto;
 }
 
@@ -261,14 +262,13 @@ h3 {
 }
 
 .review-heading {
-    width: 745px;
+    width: 60%;
+    height: auto;
+    padding: 5px 40px;
     font-family: 'Gafata', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 67px;
-    line-height: 75px;
-    display: flex;
-    align-items: center;
     text-align: center;
 }
 
@@ -285,14 +285,13 @@ h3 {
 .particular-review {
     width: 100%;
     height: auto;
-    display: flex;
-    flex-wrap: wrap;
     margin-bottom: 0px;
     margin: 10px auto;
 }
 
 .inner-review {
     display: flex;
+    /* flex-wrap: wrap; */
 }
 
 .user-name {
@@ -369,7 +368,7 @@ h3 {
 }
 
 .person-content {
-    width: 594px;
+    width: 100%;
     height: auto;
     margin: 45px 75px;
     display: flex;
