@@ -8,7 +8,6 @@ body {
 
 .wrapper {
     width: 80%;
-    background-color: rgb(255, 255, 255);
     margin: 0 auto;
     background-color: #FCEEE4;
     transition: ease all .5s;
@@ -44,7 +43,7 @@ nav ul {
 
 nav ul li {
     width: 186px;
-    background: #FFCB7C;
+    background-color: #FFCB7C;
     border-radius: 77px;
     margin: 0 auto;
     justify-content: space-between;
@@ -55,6 +54,13 @@ nav ul li {
     font-size: 30px;
     text-align: center;
     transition: ease all .5s;
+}
+
+nav ul li:hover {
+    background-color: #ffbc57;
+    border-radius: 77px;
+    transition: ease all .5s;
+    -webkit-transform: scale(1.1);
 }
 
 nav ul li a {
@@ -75,7 +81,7 @@ img {
 /* ГЛАВНАЯ СТРАНИЦА */
 
 .main-page {
-    margin: 150px auto;
+    margin: 170px auto;
     margin-left: 20px;
     display: flex;
     flex-direction: row-reverse
@@ -94,6 +100,10 @@ h1 {
     border-radius: 167px;
     width: 629px;
     height: 455px;
+}
+
+.main-page-img:hover {
+    -webkit-transform: scale(1.05);
 }
 
 .main-content {
@@ -115,11 +125,12 @@ h1 {
     width: 385px;
     height: 104px;
     margin: 50px auto;
-    background: #FFCB7C;
+    background-color: #FFCB7C;
     border-radius: 77px;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: ease all .5s;
 }
 
 .main-button a {
@@ -131,11 +142,15 @@ h1 {
     color: black;
 }
 
+.main-button:hover {
+    background-color: #ffab2d;
+    -webkit-transform: scale(1.1);
+}
+
 .main-img {
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
-    overflow: hidden;
     width: 100%;
 }
 
@@ -158,7 +173,7 @@ h1 {
 h2 {
     width: 402px;
     height: 100px;
-    background: #FFD4B6;
+    background-color: #FFD4B6;
     border-radius: 50px;
     margin: 10px auto;
     display: flex;
@@ -174,7 +189,7 @@ h2 {
 .stock-column {
     width: 405px;
     margin: 25px 2%;
-    background: #FFD9BD;
+    background-color: #FFD9BD;
     border: 1px solid #000000;
     box-sizing: border-box;
     border-radius: 109px;
@@ -232,11 +247,12 @@ h3 {
 .book-button {
     width: 75%;
     height: 58px;
-    background: #FFCB7C;
+    background-color: #FFCB7C;
     border: 1px solid #000000;
     box-sizing: border-box;
     border-radius: 153px;
     margin: 25px auto;
+    transition: ease all .1s;
 }
 
 .book-button a {
@@ -249,6 +265,11 @@ h3 {
     justify-content: center;
     text-decoration: none;
     color: black;
+}
+
+.book-button:hover {
+    -webkit-transform: scale(1.1);
+    background-color: #fdb74d
 }
 
 
@@ -275,7 +296,7 @@ h3 {
 .review-content {
     width: 95%;
     height: auto;
-    background: #FFD9BD;
+    background-color: #FFD9BD;
     border: 1px solid #FFDBC1;
     box-sizing: border-box;
     border-radius: 98px;
@@ -326,11 +347,12 @@ h3 {
 .all-review-button {
     width: 425px;
     height: 83px;
-    background: #FFCB7C;
+    background-color: #FFCB7C;
     border: 1px solid #FFDBC1;
     box-sizing: border-box;
     border-radius: 98px;
     margin-top: 20px;
+    transition: ease all .1s
 }
 
 .all-review-button a {
@@ -344,6 +366,11 @@ h3 {
     display: flex;
     justify-content: center;
     margin: 10px;
+}
+
+.all-review-button:hover {
+    -webkit-transform: scale(1.05);
+    background-color: #ffba53;
 }
 
 
@@ -368,12 +395,13 @@ h3 {
 }
 
 .person-content {
-    width: 100%;
+    width: auto;
     height: auto;
+    padding: 10px 60px;
     margin: 45px 75px;
     display: flex;
     flex-wrap: wrap;
-    background: #FFD9BD;
+    background-color: #FFD9BD;
     border: 1px solid #000000;
     box-sizing: border-box;
 }
@@ -440,7 +468,6 @@ h3 {
 }
 
 .contacts-heading {
-    padding-top: 10px;
     width: 541px;
     height: 106px;
 }
@@ -534,14 +561,15 @@ h3 {
     justify-content: flex-end;
 }
 
-.arrow-container {
-}
-
-.arrow-container img {
+.arrow {
     width: 80px;
     position: fixed;
     bottom: 50px;
     right: 50px;
+}
+
+.arrow:hover {
+    -webkit-transform: scale(1.05);
 }
 
 
