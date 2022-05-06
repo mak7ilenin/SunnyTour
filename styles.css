@@ -725,12 +725,13 @@ h3 {
     .person-content {
         width: 100%;
         margin: 20px 10px;
+        padding: 20px 20px;
     }
 
     .person-img-content {
-        width: 35%;
+        width: auto;
+        padding: 0;
         margin: 0;
-        margin-left: 20px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -745,8 +746,8 @@ h3 {
         font-size: 24px;
         margin-top: 20px;
         margin-bottom: 30px;
-        margin: 20px 0;
-        white-space: nowrap
+        margin: 10px 0;
+        /* white-space: nowrap */
     }
 
     .person-info h4 {
