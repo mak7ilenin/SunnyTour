@@ -377,6 +377,7 @@ h3 {
 /* TEAM PAGE*/
 
 .team-page {
+    background-color: #fff;
     margin: 70px auto;
     display: flex;
     flex-wrap: wrap;
@@ -395,23 +396,22 @@ h3 {
 }
 
 .person-content {
-    width: auto;
+    width: 550px;
     height: auto;
-    padding: 10px 60px;
-    margin: 45px 75px;
+    padding: 10px;
+    margin: 2.35vh 3.92875vw;
     display: flex;
     flex-wrap: wrap;
     background-color: #FFD9BD;
     border: 1px solid #000000;
     box-sizing: border-box;
+    flex-direction: space-evenly;
 }
 
 .person-img-content {
-    width: 25%;
-    margin-left: 10px;
     display: flex;
+    margin: auto;
     align-items: center;
-    margin: 0 auto;
 }
 
 .person-img {
@@ -430,7 +430,6 @@ h3 {
 }
 
 .person-info {
-    width: 55%;
     margin: 0 auto;
     list-style: none;
     text-align: center;
@@ -570,6 +569,58 @@ h3 {
 
 .arrow:hover {
     -webkit-transform: scale(1.05);
+}
+
+
+@media (max-width: 1847px) {
+    .main-img {
+        margin-bottom: 50px;
+        justify-content:center;
+        margin: 0;
+        padding: 0;
+    }   
+
+    .main-page {
+        width: 100%
+        display: flex;
+        margin-left: 0;
+        margin-top: 40px;
+        margin-bottom: 215px;
+    }
+
+    .main-page-img {
+        width: 50%;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 38px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .main-content p {
+        font-size: 18px;
+    }
+
+    .img-logo {
+        margin-top: 15px;
+        width: 150px;
+        height: 120px;
+    }
+
+    .profile-icon {
+        width: 70px;
+    }
+
+    .profile-img {
+        margin: 15px;
+        padding: 0;
+    }
+
+    .main-button {
+        height: 80px
+    }
 }
 
 
