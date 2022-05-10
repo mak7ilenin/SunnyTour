@@ -377,7 +377,6 @@ h3 {
 /* TEAM PAGE*/
 
 .team-page {
-    background-color: #fff;
     margin: 70px auto;
     display: flex;
     flex-wrap: wrap;
@@ -472,7 +471,9 @@ h3 {
 }
 
 .map-img-content {
-    width: 45%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
     
 }
 
@@ -576,20 +577,21 @@ h3 {
     .main-img {
         margin-bottom: 50px;
         justify-content:center;
-        margin: 0;
+        margin-left: 30px;
         padding: 0;
-    }   
+    }  
+    
+    .main-content {
+        margin-top: 80px;
+    }
 
     .main-page {
-        width: 100%
-        display: flex;
-        margin-left: 0;
         margin-top: 40px;
         margin-bottom: 215px;
     }
 
     .main-page-img {
-        width: 50%;
+        width: 600px;
         height: auto;
     }
 
@@ -620,6 +622,80 @@ h3 {
 
     .main-button {
         height: 80px
+    }
+}
+
+@media (max-width: 1545px) {
+    .contacts-page {
+        flex-wrap: wrap;
+    }
+
+    .contacts-info {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1356px) {
+    .main-page{
+        flex-wrap: wrap;
+    }
+
+    .main-img {
+        margin: 0;
+    }
+
+    .main-content {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 1265px) {
+    
+    .first-in-first-row {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+
+    .second-in-first-row {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .top-row {
+        flex-wrap: wrap;
+    }
+
+    .first-in-third-row {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+
+    .second-in-third-row {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .bottom-row {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 880px) {
+    .review-heading {
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 777px) {
+    .person-content {
+        width: 75%;
+        margin-left: 80px;
     }
 }
 
@@ -672,8 +748,8 @@ h3 {
     }
 
     .main-page-img {
-        width: 374px;
-        height: 239px;
+        width: 524px;
+        height: 379px;
     }
 
     h1 {
@@ -898,5 +974,16 @@ h3 {
     .second-in-third-row {
         width: 70%;
         justify-content: center;
+    }
+}
+
+@media (max-width: 552px) {
+    .main-page-img {
+        width: 400px;
+        height: 300px;
+    }
+
+    .person-info {
+        width: 50%;
     }
 }
