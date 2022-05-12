@@ -1,0 +1,987 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #FCEEE4;
+}
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #FCEEE4;
+    transition: ease all .5s;
+}
+
+/* Навигация */
+
+header {
+    background-color: #FFD4B6;
+    height: 150px;
+    border-radius: 50px;
+    display: flex;
+}
+
+.img-logo {
+    width: 189px;
+    height: 146px;
+}
+
+nav {
+    width: 85%;
+    display: flex;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+nav ul li {
+    width: 186px;
+    background-color: #FFCB7C;
+    border-radius: 77px;
+    margin: 0 auto;
+    justify-content: space-between;
+    list-style: none;
+    font-family: 'Alice';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+    transition: ease all .5s;
+}
+
+nav ul li:hover {
+    background-color: #ffbc57;
+    border-radius: 77px;
+    transition: ease all .5s;
+    -webkit-transform: scale(1.1);
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+.profile-img {
+    margin-right: 20px;
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+}
+
+img {
+    transition: ease all .5s;
+}
+
+/* ГЛАВНАЯ СТРАНИЦА */
+
+.main-page {
+    margin: 170px auto;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row-reverse
+}
+
+h1 {
+    width: 100%;
+    /* white-space: nowrap; */
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 70px;
+    text-align: center;
+}
+
+.main-page-img {
+    border-radius: 167px;
+    width: 629px;
+    height: 455px;
+}
+
+.main-page-img:hover {
+    -webkit-transform: scale(1.05);
+}
+
+.main-content {
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.main-content p{
+    width: 100%;
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 26px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.main-button{
+    width: 385px;
+    height: 104px;
+    margin: 50px auto;
+    background-color: #FFCB7C;
+    border-radius: 77px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: ease all .5s;
+}
+
+.main-button a {
+    font-family: 'Alice';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    text-decoration: none;
+    color: black;
+}
+
+.main-button:hover {
+    background-color: #ffab2d;
+    -webkit-transform: scale(1.1);
+}
+
+.main-img {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+
+/* СТРАНИЦА АКЦИЙ */
+
+
+.stock-page {
+    width: 100%;
+    margin: 150px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.stock-heading {
+    width: 100%;
+}
+
+h2 {
+    width: 402px;
+    height: 100px;
+    background-color: #FFD4B6;
+    border-radius: 50px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Gafata', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 62px;
+}
+
+.stock-column {
+    width: 405px;
+    margin: 25px 2%;
+    background-color: #FFD9BD;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 109px;
+    height: auto;
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Averia Sans Libre';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    text-align: center;
+}
+
+.stock-column ul {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 5%;
+    flex: 1 1 auto;
+    height: 345px;
+}
+
+.stock-column ul li {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    padding-bottom: 25px;
+}
+
+.stock-column p {
+    height: 30px;
+}
+
+.no-discount {
+    text-decoration: line-through;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 46px;
+    text-align: center;
+}
+
+.discount {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    text-align: center;
+    color: #FF0000;
+    padding-bottom: 20px
+}
+
+.book-button {
+    width: 75%;
+    height: 58px;
+    background-color: #FFCB7C;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 153px;
+    margin: 25px auto;
+    transition: ease all .1s;
+}
+
+.book-button a {
+    font-family: 'Alice';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+}
+
+.book-button:hover {
+    -webkit-transform: scale(1.1);
+    background-color: #fdb74d
+}
+
+
+/* СТРАНИЦА ОТЗЫВОВ */
+
+.review-page {
+    margin: 150px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.review-heading {
+    width: 60%;
+    height: auto;
+    padding: 5px 40px;
+    font-family: 'Gafata', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 67px;
+    text-align: center;
+}
+
+.review-content {
+    width: 95%;
+    height: auto;
+    background-color: #FFD9BD;
+    border: 1px solid #FFDBC1;
+    box-sizing: border-box;
+    border-radius: 98px;
+    padding: 0 30px;
+}
+
+.particular-review {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0px;
+    margin: 10px auto;
+}
+
+.inner-review {
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+
+.user-name {
+    text-align: left;
+    margin-bottom: 5px;
+    font-family: 'Averia Sans Libre', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.star-container {
+    width: 30%;
+    height: 69px;
+    margin-top: 40px;
+    margin-left: 20px;
+    background-color: #FF9D0A;
+}
+
+.review-page p {
+    width: 77%;
+    font-family: 'Gafata';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.star {
+    width: 19%;
+}
+
+.all-review-button {
+    width: 425px;
+    height: 83px;
+    background-color: #FFCB7C;
+    border: 1px solid #FFDBC1;
+    box-sizing: border-box;
+    border-radius: 98px;
+    margin-top: 20px;
+    transition: ease all .1s
+}
+
+.all-review-button a {
+    font-family: 'Alice';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 119.6%;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.all-review-button:hover {
+    -webkit-transform: scale(1.05);
+    background-color: #ffba53;
+}
+
+
+/* TEAM PAGE*/
+
+.team-page {
+    margin: 70px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.team-heading-content {
+    width: 100%;
+}
+
+.team-heading {
+    width: 541px;
+    height: 106px;
+}
+
+.person-content {
+    width: 550px;
+    height: auto;
+    padding: 10px;
+    margin: 2.35vh 3.92875vw;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #FFD9BD;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    flex-direction: space-evenly;
+}
+
+.person-img-content {
+    display: flex;
+    margin: auto;
+    align-items: center;
+}
+
+.person-img {
+    width: 175px;
+    height: 200px;
+    border-radius: 114px;
+}
+
+.person-info h3 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 31px;
+    text-align: center;
+    width: 100%;
+}
+
+.person-info {
+    margin: 0 auto;
+    list-style: none;
+    text-align: center;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.person-info h4, h5 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+}
+
+.person-info h4 {
+    font-weight: bold;
+}
+
+
+
+/* CONTACTS PAGE */
+
+
+.contacts-page {
+    margin: 100px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contacts-heading-content {
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.contacts-heading {
+    width: 541px;
+    height: 106px;
+}
+
+.map-img-content {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.contacts-info {
+    width: 50%;
+    list-style: none;
+    padding: 0;
+}
+
+.contacts-info li {
+    padding: 1px 0;
+    margin: 0 auto;
+}
+
+.contacts-info h3 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 42px;
+    text-align: center;
+    line-height: 1px;
+}
+
+.contacts-info h4 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 37px;
+    text-align: center;
+    line-height: 1px;
+}
+
+.partners-page {
+    margin: 170px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.partners-heading-content {
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.partners-heading {
+    width: 541px;
+    height: 106px;
+}
+
+.top-row {
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+}
+
+.first-in-first-row {
+    width: 50%;
+}
+
+.second-in-first-row {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.mid-row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.bottom-row {
+    width: 100%;
+    display: flex;
+}
+
+.first-in-third-row {
+    width: 50%;
+}
+
+.second-in-third-row {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.arrow {
+    width: 80px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+
+.arrow:hover {
+    -webkit-transform: scale(1.05);
+}
+
+
+@media (max-width: 1847px) {
+    .main-img {
+        margin-bottom: 50px;
+        justify-content:center;
+        margin-left: 30px;
+        padding: 0;
+    }  
+    
+    .main-content {
+        margin-top: 80px;
+    }
+
+    .main-page {
+        margin-top: 40px;
+        margin-bottom: 215px;
+    }
+
+    .main-page-img {
+        width: 600px;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 38px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .main-content p {
+        font-size: 18px;
+    }
+
+    .img-logo {
+        margin-top: 15px;
+        width: 150px;
+        height: 120px;
+    }
+
+    .profile-icon {
+        width: 70px;
+    }
+
+    .profile-img {
+        margin: 15px;
+        padding: 0;
+    }
+
+    .main-button {
+        height: 80px
+    }
+}
+
+@media (max-width: 1545px) {
+    .contacts-page {
+        flex-wrap: wrap;
+    }
+
+    .contacts-info {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1356px) {
+    .main-page{
+        flex-wrap: wrap;
+    }
+
+    .main-img {
+        margin: 0;
+    }
+
+    .main-content {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 1265px) {
+    
+    .first-in-first-row {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+
+    .second-in-first-row {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .top-row {
+        flex-wrap: wrap;
+    }
+
+    .first-in-third-row {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+
+    .second-in-third-row {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }d
+    
+    .bottom-row {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 880px) {
+    .review-heading {
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 777px) {
+    .person-content {
+        width: 75%;
+        margin-left: 80px;
+    }
+}
+
+
+
+/* phone version 
+    maximum width - 671px
+*/
+
+@media (max-width: 671px) and (min-width: 431px) {
+    .wrapper {
+        width: 100%;
+    }
+
+    /* НАВИГАЦИЯ */
+
+    nav {
+        width: 100%;
+    }
+
+    nav ul {
+        width: 100%;
+    }
+
+    nav ul li {
+        width: 75px;
+        height: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav ul li a {
+        font-size: 15px;
+    }
+
+    /* ГЛАВНАЯ СТРАНИЦА */
+
+    .main-page {
+        display: block;
+        margin-left: 0;
+        margin-top: 40px;
+        margin-bottom: 215px;
+    }
+
+    .main-img {
+        justify-content:center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .main-page-img {
+        width: 524px;
+        height: 379px;
+    }
+
+    h1 {
+        font-size: 38px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .main-content p {
+        font-size: 18px;
+    }
+
+    .img-logo {
+        margin-top: 15px;
+        width: 150px;
+        height: 120px;
+    }
+
+    .profile-icon {
+        width: 70px;
+    }
+
+    .profile-img {
+        margin: 15px;
+        padding: 0;
+    }
+
+    .main-button {
+        height: 80px
+    }
+
+    /* АКЦИИ */
+
+    .stock-column {
+        width: 100%;
+        margin: 20px;
+        padding: 15px;
+    }
+
+    .stock-column h3 {
+        font-size: 30px;
+    }
+
+    .stock-column ul {
+        height: 360px;
+        margin-top: 7%;
+    }
+
+    .stock-column ul li {
+        font-size: 20px;
+    }
+
+    .book-button {
+        width: 80%;
+    }
+
+    /* ОТЗЫВЫ */
+
+    .review-heading {
+        font-size: 40px;
+    }
+
+    .review-content {
+        padding: 20px 8px;
+    }
+
+    .particular-review {
+        padding: 20px 15px;
+    }
+
+    .inner-review {
+        flex-wrap: wrap;
+    }
+
+    .inner-review p {
+        width: 95%;
+    }
+
+    .star-container {
+        width: 241px;
+        height: 46px;
+        margin: 0;
+    }
+
+    .star {
+        width: 44.5px;
+        height: 47px;
+    }
+
+
+    /* КОМАНДА */
+
+    .team-heading-content h2 {
+        width: 80%;
+        height: 80px;
+        font-size: 50px;
+        padding: 0;
+    }
+
+    .person-content {
+        width: 100%;
+        margin: 20px 10px;
+        padding: 20px 20px;
+    }
+
+    .person-img-content {
+        width: auto;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .person-img {
+        width: 135px;
+        height: 160px;
+    }
+
+    .person-info h3 {
+        font-size: 24px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        margin: 10px 0;
+        /* white-space: nowrap */
+    }
+
+    .person-info h4 {
+        font-size: 16px
+    }
+
+    .person-info h5 {
+        font-size: 12px;
+    }
+
+
+    /* КОНТАКТЫ */
+
+    .contacts-heading-content {
+        margin-bottom: 50px;
+    }
+    
+    .contacts-heading {
+        width: 80%;
+        height: 80px;
+        font-size: 50px;
+        padding: 0;
+    }
+
+    .map-img-content {
+        width: 70%;
+        margin-top: 0
+    }
+    
+    .map-img {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .contacts-info {
+        width: 100%;
+    }
+
+    .contacts-info h3 {
+        width: 100%;
+        font-size: 30px
+    }
+    
+    .contacts-info h4 {
+        width: 100%;
+        font-size: 25px;
+    }
+
+
+    /* ПАРТНЕРЫ */
+
+    .partners-heading-content {
+        margin-bottom: 45px
+    }
+
+    .partners-heading {
+        width: 100%;
+        height: 80px;
+        font-size: 50px;
+        padding: 0;
+    }
+
+    .partners-page img {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .top-row {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .first-in-first-row {
+        width: 70%;
+        justify-content: center;
+    }
+    
+    .second-in-first-row {
+        width: 70%;
+        justify-content: center;
+    }
+
+    .mid-row {
+        width: 70%;
+    }
+    
+    .bottom-row {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .first-in-third-row {
+        width: 70%;
+        justify-content: center;
+    }
+    
+    .second-in-third-row {
+        width: 70%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 552px) {
+    .main-page-img {
+        width: 400px;
+        height: 300px;
+    }
+
+    .person-info {
+        width: 50%;
+    }
+}

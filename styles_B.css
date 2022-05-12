@@ -171,8 +171,8 @@ h1 {
 }
 
 h2 {
-    width: 402px;
-    height: 100px;
+    width: 30%;
+    height: 80px;
     background-color: #FFD4B6;
     border-radius: 50px;
     margin: 10px auto;
@@ -183,7 +183,7 @@ h2 {
     font-family: 'Gafata', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 62px;
+    font-size: 54px;
 }
 
 .stock-column {
@@ -192,7 +192,7 @@ h2 {
     background-color: #FFD9BD;
     border: 1px solid #000000;
     box-sizing: border-box;
-    border-radius: 109px;
+    border-radius: 40px;
     height: auto;
 }
 
@@ -201,16 +201,25 @@ h3 {
     font-family: 'Averia Sans Libre';
     font-style: normal;
     font-weight: 700;
-    font-size: 28px;
+    font-size: 36px;
     text-align: center;
+}
+
+.stock-column h4 {
+    text-align: center;
+    font-size: 28px;
+    margin-top: -10px;
+    font-style: italic;
+    font-weight: 400;
 }
 
 .stock-column ul {
     width: 80%;
     margin: 0 auto;
+    margin-left: 0;
     padding-bottom: 5%;
     flex: 1 1 auto;
-    height: 345px;
+    height: 315px;
 }
 
 .stock-column ul li {
@@ -218,6 +227,8 @@ h3 {
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
+    text-align: center;
+    list-style: none;
     padding-bottom: 25px;
 }
 
@@ -283,21 +294,20 @@ h3 {
 }
 
 .review-heading {
-    width: 60%;
-    height: auto;
-    padding: 5px 40px;
+    width: 30%;
+    height: 80px;
     font-family: 'Gafata', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 67px;
+    font-size: 54px;
     text-align: center;
+    margin-bottom: 40px;
 }
 
 .review-content {
     width: 95%;
     height: auto;
     background-color: #FFD9BD;
-    border: 1px solid #FFDBC1;
     box-sizing: border-box;
     border-radius: 98px;
     padding: 0 30px;
@@ -316,7 +326,7 @@ h3 {
 }
 
 .user-name {
-    text-align: left;
+    text-align: center;
     margin-bottom: 5px;
     font-family: 'Averia Sans Libre', sans-serif;
     font-style: normal;
@@ -325,10 +335,10 @@ h3 {
 }
 
 .star-container {
-    width: 30%;
-    height: 69px;
-    margin-top: 40px;
-    margin-left: 20px;
+    display: flex;
+    width: 216px;
+    height: 40px;
+    margin-top: 30px;
     background-color: #FF9D0A;
 }
 
@@ -336,36 +346,33 @@ h3 {
     width: 77%;
     font-family: 'Gafata';
     font-style: normal;
+    text-align: center;
     font-weight: 400;
     font-size: 30px;
+    margin-top: 20px;
 }
 
 .star {
-    width: 19%;
+    width: 40px;
+    height: 40px;
 }
 
 .all-review-button {
-    width: 425px;
-    height: 83px;
+    width: 25%;
+    height: 60px;
+    text-align: center;
     background-color: #FFCB7C;
-    border: 1px solid #FFDBC1;
-    box-sizing: border-box;
-    border-radius: 98px;
-    margin-top: 20px;
-    transition: ease all .1s
+    border-radius: 20px;
+    margin-top: 70px;
+    transition: ease all .1s;
 }
 
 .all-review-button a {
     font-family: 'Alice';
-    font-style: normal;
     font-weight: 400;
     font-size: 45px;
-    line-height: 119.6%;
     text-decoration: none;
     color: black;
-    display: flex;
-    justify-content: center;
-    margin: 10px;
 }
 
 .all-review-button:hover {
@@ -377,7 +384,7 @@ h3 {
 /* TEAM PAGE*/
 
 .team-page {
-    margin: 70px auto;
+    margin: 155px auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -388,17 +395,16 @@ h3 {
 }
 
 .team-heading {
-    padding-top: 10px;
-    width: 541px;
-    height: 106px;
-    flex-wrap: wrap;
+    width: 30%;
+    height: 80px;
+    margin-bottom: 35px;
 }
 
 .person-content {
     width: 550px;
     height: auto;
     padding: 10px;
-    margin: 2.35vh 3.92875vw;
+    margin: 3.35vh 3.92875vw;
     display: flex;
     flex-wrap: wrap;
     background-color: #FFD9BD;
@@ -454,7 +460,7 @@ h3 {
 
 
 .contacts-page {
-    margin: 100px auto;
+    margin: 120px auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -462,19 +468,19 @@ h3 {
 
 .contacts-heading-content {
     width: 100%;
-    margin-bottom: 100px;
+    margin-bottom: 105px;
 }
 
 .contacts-heading {
-    width: 541px;
-    height: 106px;
+    width: 30%;
+    height: 80px;
+    margin-bottom: 30px;
 }
 
 .map-img-content {
-    width: 100%;
+    width: 50%;
     display: flex;
     justify-content: center;
-    
 }
 
 .contacts-info {
@@ -506,11 +512,14 @@ h3 {
     line-height: 1px;
 }
 
+/*  PARTNERS PAGE */
+
 .partners-page {
-    margin: 170px auto;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 70px;
 }
 
 .partners-heading-content {
@@ -519,8 +528,9 @@ h3 {
 }
 
 .partners-heading {
-    width: 541px;
-    height: 106px;
+    width: 30%;
+    height: 80px;
+    margin-top: 110px 
 }
 
 .top-row {
@@ -679,7 +689,7 @@ h3 {
         width: 100%;
         display: flex;
         justify-content: center;
-    }
+    }d
     
     .bottom-row {
         flex-wrap: wrap;
