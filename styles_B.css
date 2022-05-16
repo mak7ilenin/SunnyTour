@@ -169,7 +169,7 @@ h1 {
 }
 
 h2 {
-    width: 30%;
+    width: 400px;
     height: 80px;
     background-color: #FFD4B6;
     border-radius: 50px;
@@ -292,7 +292,7 @@ h3 {
 }
 
 .review-heading {
-    width: 30%;
+    width: 400px;
     height: 80px;
     font-family: 'Gafata', sans-serif;
     font-style: normal;
@@ -389,7 +389,7 @@ h3 {
 }
 
 .team-heading {
-    width: 30%;
+    width: 550px;
     height: 80px;
     margin-bottom: 35px;
 }
@@ -403,7 +403,6 @@ h3 {
     flex-wrap: wrap;
     background-color: #FFD9BD;
     border: 1px solid #000000;
-    box-sizing: border-box;
     flex-direction: space-evenly;
 }
 
@@ -466,7 +465,7 @@ h3 {
 }
 
 .contacts-heading {
-    width: 30%;
+    width: 550px;
     height: 80px;
     margin-bottom: 30px;
 }
@@ -481,6 +480,11 @@ h3 {
     width: 50%;
     list-style: none;
     padding: 0;
+}
+
+iframe {
+    width: 800px;
+    height: 500px;
 }
 
 .contacts-info li {
@@ -522,7 +526,7 @@ h3 {
 }
 
 .partners-heading {
-    width: 30%;
+    width: 400px;
     height: 80px;
     margin-top: 110px 
 }
@@ -623,6 +627,10 @@ h3 {
         margin: 15px;
         padding: 0;
     }
+
+    .all-review-button {
+        width: 400px;
+    }
 }
 
 @media (max-width: 1586px) {
@@ -651,6 +659,15 @@ h3 {
 
     .contacts-info {
         width: 100%;
+    }
+
+    .map-img-content {
+        width: 70%;
+    }
+
+    iframe {
+        width: 800px;
+        height: 500px;
     }
 }
 
@@ -724,11 +741,16 @@ h3 {
         height: auto;
     }
 
-}
+    .stock-heading h2{
+        width: 400px;
+    }
 
-@media (max-width: 880px) {
-    .review-heading {
-        font-size: 60px;
+    .map-img-content {
+        width: 100%;
+    }
+
+    iframe {
+        width: 90%;
     }
 }
 
@@ -744,20 +766,50 @@ h3 {
     nav ul li a {
         font-size: 20px;
     }
+
+    .arrow {
+        bottom: 30px;
+        right: 20px;
+    }
 }
 
 @media (max-width: 777px) {
+    .wrapper {
+        width: 100%;
+    }
+
+    .team-heading {
+        width: 500px;
+    }
+
     .person-content {
-        width: 75%;
-        margin-left: 80px;
+        width: 500px;
+        padding: 0;
+        margin: 3.35vh 3.92875vw;
+    }
+
+    .person-info h3 {
+        font-size: 25px;
+    }
+    
+    .person-info h4 {
+        font-size: 16px;
+    }
+
+    .person-info h5 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 450px) {
+    .person-content {
+        width: 100%;
+        padding: 10px 10px;
     }
 }
 
 
-
-/* phone version 
-    maximum width - 671px
-*/
+/* phone version */
 
 @media (max-width: 671px) and (min-width: 431px) {
     .wrapper {
@@ -806,6 +858,14 @@ h3 {
         height: 379px;
     }
 
+    .main-page-img:hover {
+        -webkit-transform: scale(1.03);
+    }
+
+    .main-button:hover {
+        -webkit-transform: scale(1.07);
+    }
+
     h1 {
         font-size: 38px;
         margin-left: 0;
@@ -837,23 +897,38 @@ h3 {
 
     /* АКЦИИ */
 
+    .stock-heading {
+        font-size: 60px;
+    }
+    
+    .stock-heading h2 {        
+        width: 400px;
+    }
+
     .stock-column {
-        width: 100%;
         margin: 20px;
         padding: 15px;
     }
 
     .stock-column h3 {
-        font-size: 30px;
+        font-size: 35px;
     }
 
     .stock-column ul {
-        height: 360px;
+        height: 280px;
         margin-top: 7%;
     }
 
     .stock-column ul li {
         font-size: 20px;
+    }
+
+    .discount {
+        font-size: 40px;
+    }
+
+    .no-discount {
+        font-size: 40px;
     }
 
     .book-button {
@@ -863,15 +938,12 @@ h3 {
     /* ОТЗЫВЫ */
 
     .review-heading {
-        font-size: 40px;
+        font-size: 60px;
+        width: 90%;
     }
 
     .review-content {
         padding: 20px 8px;
-    }
-
-    .particular-review {
-        padding: 20px 15px;
     }
 
     .inner-review {
@@ -885,7 +957,7 @@ h3 {
     .star-container {
         width: 241px;
         height: 46px;
-        margin: 0;
+        margin: 20px auto;
     }
 
     .star {
@@ -893,20 +965,30 @@ h3 {
         height: 47px;
     }
 
+    .all-review-button {
+        width: 290px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .all-review-button a {
+        font-size: 35px;
+    }
+
 
     /* КОМАНДА */
 
-    .team-heading-content h2 {
-        width: 80%;
+    .team-heading {
+        width: 467px;
         height: 80px;
         font-size: 50px;
         padding: 0;
     }
 
     .person-content {
-        width: 100%;
-        margin: 20px 10px;
-        padding: 20px 20px;
+        width: 445px;
+        padding: 10px 10px;
     }
 
     .person-img-content {
@@ -916,6 +998,10 @@ h3 {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .person-info {
+        margin: 0 auto;
     }
 
     .person-img {
@@ -977,6 +1063,14 @@ h3 {
         font-size: 25px;
     }
 
+    .map-img-content {
+        width: 100%;
+    }
+
+    iframe {
+        width: 90%;
+    }
+
 
     /* ПАРТНЕРЫ */
 
@@ -985,7 +1079,7 @@ h3 {
     }
 
     .partners-heading {
-        width: 100%;
+        width: 80%;
         height: 80px;
         font-size: 50px;
         padding: 0;
@@ -1039,5 +1133,16 @@ h3 {
 
     .person-info {
         width: 50%;
+    }
+
+    .team-heading {
+        width: 90%;
+    }
+}
+
+@media (max-width: 500px) {
+    .stock-column {
+        width: 400px;
+        margin: 20px 0;
     }
 }
