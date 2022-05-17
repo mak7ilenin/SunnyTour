@@ -124,7 +124,8 @@ h1 {
     height: 104px;
     margin: 50px auto;
     background-color: #FFCB7C;
-    border-radius: 77px;
+    border-radius: 37px;
+    border: 3px dotted;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -135,7 +136,7 @@ h1 {
     font-family: 'Alice';
     font-style: normal;
     font-weight: 400;
-    font-size: 35px;
+    font-size: 45px;
     text-decoration: none;
     color: black;
 }
@@ -303,11 +304,11 @@ h3 {
 }
 
 .review-content {
-    width: 95%;
+    width: 85%;
     height: auto;
     background-color: #FFD9BD;
-    box-sizing: border-box;
     border-radius: 40px;
+    border: 2px dashed;
     padding: 0 30px;
 }
 
@@ -867,13 +868,13 @@ iframe {
     }
 
     h1 {
-        font-size: 38px;
+        font-size: 50px;
         margin-left: 0;
         text-align: center;
     }
 
     .main-content p {
-        font-size: 18px;
+        font-size: 25px;
     }
 
     .img-logo {
@@ -963,6 +964,15 @@ iframe {
     .star {
         width: 44.5px;
         height: 47px;
+    }
+
+    .inner-review {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .inner-review p {
+        margin: 0 10px;
     }
 
     .all-review-button {
@@ -1144,5 +1154,179 @@ iframe {
     .stock-column {
         width: 400px;
         margin: 20px 0;
+    }
+}
+
+@media (max-width: 430px) {
+    .img-logo {
+        width: 120px;
+        height: 100px;
+        margin: 20px auto;
+    }
+    
+    .profile-icon {
+        width: 50px
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+    }
+
+    nav ul li {
+        width: 105px;
+        height: 20px;
+    }
+    
+    nav ul li a {
+        font-size: 18px;
+    }
+
+    .main-page {
+        margin: 20px 0;
+    }
+
+    .main-page-img {
+        width: 360px;
+        height: 260px
+    }
+
+    h1 {
+        margin: 20px auto;
+        font-size: 50px;
+    }
+
+    .main-content p {
+        margin: 40px auto;
+        font-size: 20px;
+    }
+
+    .main-button {
+        width: 310px;
+        height: 70px;
+        margin: 10px auto;
+    }
+
+    .main-button a {
+        font-size: 35px;
+    }
+
+    .stock-heading h2 {
+        width: 100%;
+    }
+
+    .no-discount {
+        font-size: 40px;
+    }
+
+    .discount {
+        font-size: 40px;
+    }
+
+    .all-review-button {
+        width: 75%;
+        height: 50px;
+        margin: 40px auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .inner-review {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .inner-review p {
+        margin: 0;
+    }
+
+    .all-review-button a {
+        font-size: 40px;
+    }
+
+    .person-content {
+        margin: 30px 0;
+    }
+
+    .person-info {
+        width: 100%;
+    }
+
+    .contacts-heading {
+        width: 100%;
+    }
+
+    .contacts-heading-content {
+        margin-bottom: 20px;
+    }
+
+    .map-img-content {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    iframe {
+        width: 340px;
+        height: 400px
+    }
+
+    .team-page {
+        margin-bottom: 10px;
+    }
+
+    .contacts-page {
+        margin-top: 50px;
+    }
+
+    .contacts-info {
+        margin: 40px auto;
+    }
+
+    .contacts-info h3 {
+        width: 100%;
+        font-size: 30px
+    }
+    
+    .contacts-info h4 {
+        width: 100%;
+        font-size: 25px;
+    }
+
+    .partners-heading {
+        width: 100%;
+    }
+
+    .partners-page img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 375px) {
+    header {
+        width: 340px
+    }
+    
+    .main-page {
+        width: 340px;
+    }
+    
+    .stock-page {
+        width: 340px;
+    }
+
+    .review-page {
+        width: 340px;
+    }
+
+    .team-page {
+        width: 340px;
+    }
+
+    .contacts-page {
+        width: 340px;
+    }
+
+    .partners-page {
+        width: 340px;
     }
 }
